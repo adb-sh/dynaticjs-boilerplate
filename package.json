@@ -1,0 +1,27 @@
+{
+  "name": "dynaticjs-boilerplate",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/main.js",
+  "type": "module",
+  "author": "adb-sh",
+  "license": "MIT",
+  "devDependencies": {
+    "chokidar": "^3.5.3",
+    "css-loader": "^6.7.1",
+    "esbuild": "^0.14.38",
+    "get-port": "^6.1.2",
+    "live-server": "^1.2.2",
+    "normalize.css": "^8.0.1"
+  },
+  "dependencies": {
+    "dynaticjs": "0.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild --bundle src/main.js --outfile=public/main.js --target=es6",
+    "start": "npm run build -- --servedir=public",
+    "watch": "npm run build -- --watch",
+    "server": "node server.mjs"
+  }
+}

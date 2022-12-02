@@ -1,4 +1,4 @@
-import Component from "../../../dynaticjs/Component.js";
+import Component from "dynaticjs/Component.js";
 import Clock from "../components/Clock.js";
 
 export default class Home extends Component {

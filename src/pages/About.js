@@ -1,4 +1,4 @@
-import Component from "../../../dynaticjs/Component.js";
+import Component from "dynaticjs/Component.js";
 
 export default class Home extends Component {
   render() {
